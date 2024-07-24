@@ -14,7 +14,7 @@ const getLibrary = function() {
         console.log(listLibrary)
 
      const bookContainer = document.getElementById('book-container')
-    listLibrary.slice(1).forEach((book) => {                               //con slice(1) salto il primo elemento dell array
+     listLibrary.forEach((book) => {                        
       // creo la mia card con JS
         const col = document.createElement('div')
         col.classList.add('col')
