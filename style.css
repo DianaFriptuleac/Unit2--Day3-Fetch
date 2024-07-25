@@ -2,3 +2,14 @@
     height: 75%;
     object-fit: cover;
 }
+.title-overflow{
+    height: 2em;    
+    overflow:hidden;   
+    text-overflow:ellipsis;   
+    white-space: nowrap;     /*impedisco al testo di andare a capo*/
+    cursor: pointer;         /*cambio il cursore*/
+}
+.expanded-text{
+height: auto;              /*altezza auto per il contenuto*/
+white-space:normal;        /*faccio in modo che il teso vada a capo quando clicco sopra*/
+}
