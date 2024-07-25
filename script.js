@@ -7,12 +7,14 @@ const getLibrary = function () {
             console.log(response)
             //se la risposta e positiva converti in formato JSON
             if (response.ok) {
+                //leggere l'array 
                 return response.json()
-                //se la risposta e negativa lancia il messaggio                                
+                //se la risposta e negativa lancio nel catch                             
             } else {
                 throw new Error('Qualcosa e andata storto con la chiamata in rete')
             }
         })
+        //aspettimano la json response
         .then((listLibrary) => {
             console.log(listLibrary)
             //per ogni libro nell'array creo la mia card
